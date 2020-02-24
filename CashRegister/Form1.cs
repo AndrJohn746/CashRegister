@@ -186,6 +186,7 @@ namespace CashRegister
                 }
                 writing.Stop();
                 ambience.PlayLooping();
+                //tee hee
             }
         }
 
