@@ -220,7 +220,7 @@
             // 
             this.ReceiptHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ReceiptHeader.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiptHeader.Location = new System.Drawing.Point(410, 56);
+            this.ReceiptHeader.Location = new System.Drawing.Point(410, 86);
             this.ReceiptHeader.Name = "ReceiptHeader";
             this.ReceiptHeader.Size = new System.Drawing.Size(310, 47);
             this.ReceiptHeader.TabIndex = 19;
@@ -231,7 +231,7 @@
             // 
             this.OrderAndDate.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.OrderAndDate.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderAndDate.Location = new System.Drawing.Point(410, 103);
+            this.OrderAndDate.Location = new System.Drawing.Point(410, 133);
             this.OrderAndDate.Name = "OrderAndDate";
             this.OrderAndDate.Size = new System.Drawing.Size(310, 58);
             this.OrderAndDate.TabIndex = 20;
@@ -241,7 +241,7 @@
             // 
             this.OrderPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.OrderPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderPrint.Location = new System.Drawing.Point(410, 157);
+            this.OrderPrint.Location = new System.Drawing.Point(410, 187);
             this.OrderPrint.Name = "OrderPrint";
             this.OrderPrint.Size = new System.Drawing.Size(223, 118);
             this.OrderPrint.TabIndex = 21;
@@ -252,7 +252,7 @@
             // 
             this.PricePrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.PricePrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PricePrint.Location = new System.Drawing.Point(607, 159);
+            this.PricePrint.Location = new System.Drawing.Point(607, 189);
             this.PricePrint.Name = "PricePrint";
             this.PricePrint.Size = new System.Drawing.Size(113, 116);
             this.PricePrint.TabIndex = 22;
@@ -263,7 +263,7 @@
             // 
             this.TotalPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TotalPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPrint.Location = new System.Drawing.Point(410, 275);
+            this.TotalPrint.Location = new System.Drawing.Point(410, 305);
             this.TotalPrint.Name = "TotalPrint";
             this.TotalPrint.Size = new System.Drawing.Size(176, 141);
             this.TotalPrint.TabIndex = 23;
@@ -273,7 +273,7 @@
             // 
             this.TotalsOutputPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TotalsOutputPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalsOutputPrint.Location = new System.Drawing.Point(581, 275);
+            this.TotalsOutputPrint.Location = new System.Drawing.Point(581, 305);
             this.TotalsOutputPrint.Name = "TotalsOutputPrint";
             this.TotalsOutputPrint.Size = new System.Drawing.Size(139, 141);
             this.TotalsOutputPrint.TabIndex = 24;
@@ -284,11 +284,11 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(410, 416);
+            this.label1.Location = new System.Drawing.Point(410, 446);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 93);
+            this.label1.Size = new System.Drawing.Size(310, 56);
             this.label1.TabIndex = 25;
-            this.label1.Text = "Drink responsibly, and have a nice day\r\n\r\nSponsored by Ye Olde Blacksmith Shoppe";
+            this.label1.Text = "Drink responsibly, and have a nice day\r\nSponsored by Ye Olde Blacksmith Shoppe";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ChangeOutput
@@ -377,7 +377,7 @@
             this.Controls.Add(this.BPLabel);
             this.Controls.Add(this.RPLabel);
             this.Controls.Add(this.PSTitle);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Potion Seller\'s Potions Cash Register";

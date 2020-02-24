@@ -178,7 +178,7 @@ namespace CashRegister
                 writing.Play();
 
                 //moves the receipt cover down
-                while (ReceiptCover.Location.Y < 475)
+                while (ReceiptCover.Location.Y < 425)
                 {
                     ReceiptCover.Location = new Point(ReceiptCover.Location.X, ReceiptCover.Location.Y + 16);
                     Refresh();
@@ -186,7 +186,6 @@ namespace CashRegister
                 }
                 writing.Stop();
                 ambience.PlayLooping();
-                //tee hee
             }
         }
 
