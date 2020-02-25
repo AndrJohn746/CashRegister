@@ -101,7 +101,7 @@ namespace CashRegister
             }
             catch //if tried and failed, display error message
             {
-                Error.Text = "Error; please input NUMBERS for order";
+                Error.Text = "Error; please input VALID NUMBERS for order";
             }
         }
 
@@ -182,7 +182,7 @@ namespace CashRegister
                 {
                     ReceiptCover.Location = new Point(ReceiptCover.Location.X, ReceiptCover.Location.Y + 16);
                     Refresh();
-                    Thread.Sleep(250);
+                    Thread.Sleep(300);
                 }
                 writing.Stop();
                 ambience.PlayLooping();
