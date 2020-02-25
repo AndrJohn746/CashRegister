@@ -41,11 +41,11 @@ namespace CashRegister
             InitializeComponent();
 
             //clears all text boxes we will rewrite over later
-            OrderPrint.Text = "";
-            PricePrint.Text = "";
-            TotalsOutputPrint.Text = "";
-            CalcNum.Text = "";
-            ChangeOutput.Text = "";
+            orderPrint.Text = "";
+            pricePrint.Text = "";
+            totalsOutputPrint.Text = "";
+            calcNum.Text = "";
+            changeOutput.Text = "";
             Error.Text = "";
             ReceiptCover.Text = "";
             ReceiptCover.Location = new Point(300, 35);
@@ -94,9 +94,9 @@ namespace CashRegister
                 Total = TaxCalc + SubTotal;
 
                 //displays calculations
-                CalcNum.Text = "" + SubTotal.ToString("0.00");
-                CalcNum.Text += "\n\n " + TaxCalc.ToString("0.00");
-                CalcNum.Text += "\n\n " + Total.ToString("0.00");
+                calcNum.Text = "" + SubTotal.ToString("0.00");
+                calcNum.Text += "\n\n " + TaxCalc.ToString("0.00");
+                calcNum.Text += "\n\n " + Total.ToString("0.00");
                 Error.Text = "";
             }
             catch //if tried and failed, display error message
@@ -110,11 +110,11 @@ namespace CashRegister
             try //try to gather if tendered number is enough
             {
                 //gathers the number input for money tendered and change
-                Tendered = Convert.ToInt16(TendInput.Text);
+                Tendered = Convert.ToInt16(tendInput.Text);
                 Change = Tendered - Total;
                 
                 //displays calculations
-                ChangeOutput.Text = "" + Change.ToString("0.00");
+                changeOutput.Text = "" + Change.ToString("0.00");
                 Error.Text = "";
 
                 //error message if tendered amount isn't enough
@@ -149,28 +149,28 @@ namespace CashRegister
             }else{
 
             //just formatting stuff :)    
-            OrderPrint.Text = "\n";
-            PricePrint.Text = "\n";
+            orderPrint.Text = "\n";
+            pricePrint.Text = "\n";
 
                 if (RedPotions > 0) //if any red potions ordered, display number ordered and price
                 {
-                    OrderPrint.Text += "   R. Potions x" + RedPotions.ToString() + "\n";
-                    PricePrint.Text += "" + RedPrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   R. Potions x" + RedPotions.ToString() + "\n";
+                    pricePrint.Text += "" + RedPrice.ToString("0.00") + "   \n";
                 }
                 if (BluePotions > 0) //if any blue potions ordered, display number and price
                 {
-                    OrderPrint.Text += "   B. Potions x" + BluePotions.ToString() + "\n";
-                    PricePrint.Text += "" + BluePrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   B. Potions x" + BluePotions.ToString() + "\n";
+                    pricePrint.Text += "" + BluePrice.ToString("0.00") + "   \n";
                 }
                 if (GreenPotions > 0) //if any green potions ordered, display number and price
                 {
-                    OrderPrint.Text += "   G. Potions x" + GreenPotions.ToString() + "\n";
-                    PricePrint.Text += "" + GreenPrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   G. Potions x" + GreenPotions.ToString() + "\n";
+                    pricePrint.Text += "" + GreenPrice.ToString("0.00") + "   \n";
                 }
 
                 //displays total and change and stuff
-                TotalsOutputPrint.Text = "" + SubTotal.ToString("0.00") + "   \n" + TaxCalc.ToString("0.00") + "   \n" + Total.ToString("0.00");
-                TotalsOutputPrint.Text += "   \n\n" + Tendered.ToString("0.00") + "   \n" + Change.ToString("0.00") + "   ";
+                totalsOutputPrint.Text = "" + SubTotal.ToString("0.00") + "   \n" + TaxCalc.ToString("0.00") + "   \n" + Total.ToString("0.00");
+                totalsOutputPrint.Text += "   \n\n" + Tendered.ToString("0.00") + "   \n" + Change.ToString("0.00") + "   ";
 
             //clears the error box if there are any errors
             Error.Text = "";
@@ -202,9 +202,9 @@ namespace CashRegister
             RPInput.Text = "0";
             BPInput.Text = "0";
             GPInput.Text = "0";
-            TendInput.Text = "0";
-            CalcNum.Text = "";
-            ChangeOutput.Text = "";
+            tendInput.Text = "0";
+            calcNum.Text = "";
+            changeOutput.Text = "";
             Error.Text = "";
         }
     }

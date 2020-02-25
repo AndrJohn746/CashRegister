@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.PSTitle = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.RPLabel = new System.Windows.Forms.Label();
             this.BPLabel = new System.Windows.Forms.Label();
             this.GPLabel = new System.Windows.Forms.Label();
-            this.CalcTotalButton = new System.Windows.Forms.Button();
+            this.calcTotalButton = new System.Windows.Forms.Button();
             this.GPInput = new System.Windows.Forms.TextBox();
             this.BPInput = new System.Windows.Forms.TextBox();
             this.RPInput = new System.Windows.Forms.TextBox();
-            this.CalcLabel = new System.Windows.Forms.Label();
+            this.calcLabel = new System.Windows.Forms.Label();
             this.CalcNumber = new System.Windows.Forms.Label();
-            this.CalcNum = new System.Windows.Forms.Label();
+            this.calcNum = new System.Windows.Forms.Label();
             this.blackBarLabel = new System.Windows.Forms.Label();
-            this.TendLabel = new System.Windows.Forms.Label();
-            this.TendInput = new System.Windows.Forms.TextBox();
-            this.CalcChangeButton = new System.Windows.Forms.Button();
-            this.ChangeLabel = new System.Windows.Forms.Label();
-            this.ReceiptHeader = new System.Windows.Forms.Label();
-            this.OrderAndDate = new System.Windows.Forms.Label();
-            this.OrderPrint = new System.Windows.Forms.Label();
-            this.PricePrint = new System.Windows.Forms.Label();
-            this.TotalPrint = new System.Windows.Forms.Label();
-            this.TotalsOutputPrint = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ChangeOutput = new System.Windows.Forms.Label();
-            this.PrintButton = new System.Windows.Forms.Button();
+            this.tendLabel = new System.Windows.Forms.Label();
+            this.tendInput = new System.Windows.Forms.TextBox();
+            this.calcChangeButton = new System.Windows.Forms.Button();
+            this.changeLabel = new System.Windows.Forms.Label();
+            this.receiptHeader = new System.Windows.Forms.Label();
+            this.orderDate = new System.Windows.Forms.Label();
+            this.orderPrint = new System.Windows.Forms.Label();
+            this.pricePrint = new System.Windows.Forms.Label();
+            this.totalPrint = new System.Windows.Forms.Label();
+            this.totalsOutputPrint = new System.Windows.Forms.Label();
+            this.receiptFooter = new System.Windows.Forms.Label();
+            this.changeOutput = new System.Windows.Forms.Label();
+            this.printButton = new System.Windows.Forms.Button();
             this.Error = new System.Windows.Forms.Label();
             this.ReceiptCover = new System.Windows.Forms.Label();
-            this.ResetButton = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // PSTitle
+            // title
             // 
-            this.PSTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.PSTitle.Font = new System.Drawing.Font("Gabriola", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PSTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PSTitle.Location = new System.Drawing.Point(-1, -17);
-            this.PSTitle.Name = "PSTitle";
-            this.PSTitle.Size = new System.Drawing.Size(735, 54);
-            this.PSTitle.TabIndex = 0;
-            this.PSTitle.Text = "Potion Seller\'s Potions";
+            this.title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.title.Font = new System.Drawing.Font("Gabriola", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Location = new System.Drawing.Point(-1, -17);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(735, 54);
+            this.title.TabIndex = 0;
+            this.title.Text = "Potion Seller\'s Potions";
             // 
             // RPLabel
             // 
@@ -100,16 +100,16 @@
             this.GPLabel.TabIndex = 3;
             this.GPLabel.Text = "Number of Green Potions (10 Shillings each)";
             // 
-            // CalcTotalButton
+            // calcTotalButton
             // 
-            this.CalcTotalButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcTotalButton.Location = new System.Drawing.Point(17, 180);
-            this.CalcTotalButton.Name = "CalcTotalButton";
-            this.CalcTotalButton.Size = new System.Drawing.Size(291, 37);
-            this.CalcTotalButton.TabIndex = 4;
-            this.CalcTotalButton.Text = "Calculate Totals";
-            this.CalcTotalButton.UseVisualStyleBackColor = true;
-            this.CalcTotalButton.Click += new System.EventHandler(this.CalcTotalButton_Click);
+            this.calcTotalButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calcTotalButton.Location = new System.Drawing.Point(17, 180);
+            this.calcTotalButton.Name = "calcTotalButton";
+            this.calcTotalButton.Size = new System.Drawing.Size(291, 37);
+            this.calcTotalButton.TabIndex = 4;
+            this.calcTotalButton.Text = "Calculate Totals";
+            this.calcTotalButton.UseVisualStyleBackColor = true;
+            this.calcTotalButton.Click += new System.EventHandler(this.CalcTotalButton_Click);
             // 
             // GPInput
             // 
@@ -138,14 +138,14 @@
             this.RPInput.TabIndex = 1;
             this.RPInput.Text = "0";
             // 
-            // CalcLabel
+            // calcLabel
             // 
-            this.CalcLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcLabel.Location = new System.Drawing.Point(64, 220);
-            this.CalcLabel.Name = "CalcLabel";
-            this.CalcLabel.Size = new System.Drawing.Size(100, 99);
-            this.CalcLabel.TabIndex = 8;
-            this.CalcLabel.Text = "Sub Total:\r\n\r\nTax:\r\n\r\nTotal:";
+            this.calcLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calcLabel.Location = new System.Drawing.Point(64, 220);
+            this.calcLabel.Name = "calcLabel";
+            this.calcLabel.Size = new System.Drawing.Size(100, 99);
+            this.calcLabel.TabIndex = 8;
+            this.calcLabel.Text = "Sub Total:\r\n\r\nTax:\r\n\r\nTotal:";
             // 
             // CalcNumber
             // 
@@ -156,15 +156,15 @@
             this.CalcNumber.Size = new System.Drawing.Size(0, 18);
             this.CalcNumber.TabIndex = 9;
             // 
-            // CalcNum
+            // calcNum
             // 
-            this.CalcNum.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcNum.Location = new System.Drawing.Point(170, 220);
-            this.CalcNum.Name = "CalcNum";
-            this.CalcNum.Size = new System.Drawing.Size(100, 99);
-            this.CalcNum.TabIndex = 10;
-            this.CalcNum.Text = ".";
-            this.CalcNum.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.calcNum.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calcNum.Location = new System.Drawing.Point(170, 220);
+            this.calcNum.Name = "calcNum";
+            this.calcNum.Size = new System.Drawing.Size(100, 99);
+            this.calcNum.TabIndex = 10;
+            this.calcNum.Text = ".";
+            this.calcNum.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // blackBarLabel
             // 
@@ -175,142 +175,142 @@
             this.blackBarLabel.Size = new System.Drawing.Size(291, 23);
             this.blackBarLabel.TabIndex = 11;
             // 
-            // TendLabel
+            // tendLabel
             // 
-            this.TendLabel.AutoSize = true;
-            this.TendLabel.BackColor = System.Drawing.Color.LightCoral;
-            this.TendLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TendLabel.Location = new System.Drawing.Point(64, 361);
-            this.TendLabel.Name = "TendLabel";
-            this.TendLabel.Size = new System.Drawing.Size(129, 18);
-            this.TendLabel.TabIndex = 12;
-            this.TendLabel.Text = "Shillings Tendered";
+            this.tendLabel.AutoSize = true;
+            this.tendLabel.BackColor = System.Drawing.Color.LightCoral;
+            this.tendLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tendLabel.Location = new System.Drawing.Point(64, 361);
+            this.tendLabel.Name = "tendLabel";
+            this.tendLabel.Size = new System.Drawing.Size(129, 18);
+            this.tendLabel.TabIndex = 12;
+            this.tendLabel.Text = "Shillings Tendered";
             // 
-            // TendInput
+            // tendInput
             // 
-            this.TendInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TendInput.Location = new System.Drawing.Point(236, 361);
-            this.TendInput.Name = "TendInput";
-            this.TendInput.Size = new System.Drawing.Size(34, 28);
-            this.TendInput.TabIndex = 5;
-            this.TendInput.Text = "0";
+            this.tendInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tendInput.Location = new System.Drawing.Point(236, 361);
+            this.tendInput.Name = "tendInput";
+            this.tendInput.Size = new System.Drawing.Size(34, 28);
+            this.tendInput.TabIndex = 5;
+            this.tendInput.Text = "0";
             // 
-            // CalcChangeButton
+            // calcChangeButton
             // 
-            this.CalcChangeButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcChangeButton.Location = new System.Drawing.Point(17, 389);
-            this.CalcChangeButton.Name = "CalcChangeButton";
-            this.CalcChangeButton.Size = new System.Drawing.Size(291, 37);
-            this.CalcChangeButton.TabIndex = 6;
-            this.CalcChangeButton.Text = "Calculate Change";
-            this.CalcChangeButton.UseVisualStyleBackColor = true;
-            this.CalcChangeButton.Click += new System.EventHandler(this.CalcChangeButton_Click);
+            this.calcChangeButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calcChangeButton.Location = new System.Drawing.Point(17, 389);
+            this.calcChangeButton.Name = "calcChangeButton";
+            this.calcChangeButton.Size = new System.Drawing.Size(291, 37);
+            this.calcChangeButton.TabIndex = 6;
+            this.calcChangeButton.Text = "Calculate Change";
+            this.calcChangeButton.UseVisualStyleBackColor = true;
+            this.calcChangeButton.Click += new System.EventHandler(this.CalcChangeButton_Click);
             // 
-            // ChangeLabel
+            // changeLabel
             // 
-            this.ChangeLabel.AutoSize = true;
-            this.ChangeLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChangeLabel.Location = new System.Drawing.Point(64, 429);
-            this.ChangeLabel.Name = "ChangeLabel";
-            this.ChangeLabel.Size = new System.Drawing.Size(53, 18);
-            this.ChangeLabel.TabIndex = 15;
-            this.ChangeLabel.Text = "Change";
+            this.changeLabel.AutoSize = true;
+            this.changeLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeLabel.Location = new System.Drawing.Point(64, 429);
+            this.changeLabel.Name = "changeLabel";
+            this.changeLabel.Size = new System.Drawing.Size(53, 18);
+            this.changeLabel.TabIndex = 15;
+            this.changeLabel.Text = "Change";
             // 
-            // ReceiptHeader
+            // receiptHeader
             // 
-            this.ReceiptHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ReceiptHeader.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiptHeader.Location = new System.Drawing.Point(410, 86);
-            this.ReceiptHeader.Name = "ReceiptHeader";
-            this.ReceiptHeader.Size = new System.Drawing.Size(310, 47);
-            this.ReceiptHeader.TabIndex = 19;
-            this.ReceiptHeader.Text = "\r\nPotion Seller\'s Potions";
-            this.ReceiptHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.receiptHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.receiptHeader.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptHeader.Location = new System.Drawing.Point(410, 86);
+            this.receiptHeader.Name = "receiptHeader";
+            this.receiptHeader.Size = new System.Drawing.Size(310, 47);
+            this.receiptHeader.TabIndex = 19;
+            this.receiptHeader.Text = "\r\nPotion Seller\'s Potions";
+            this.receiptHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // OrderAndDate
+            // orderDate
             // 
-            this.OrderAndDate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.OrderAndDate.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderAndDate.Location = new System.Drawing.Point(410, 133);
-            this.OrderAndDate.Name = "OrderAndDate";
-            this.OrderAndDate.Size = new System.Drawing.Size(310, 58);
-            this.OrderAndDate.TabIndex = 20;
-            this.OrderAndDate.Text = "   Order Number: 2234\r\n   November 21, 1374";
+            this.orderDate.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.orderDate.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderDate.Location = new System.Drawing.Point(410, 133);
+            this.orderDate.Name = "orderDate";
+            this.orderDate.Size = new System.Drawing.Size(310, 58);
+            this.orderDate.TabIndex = 20;
+            this.orderDate.Text = "   Order Number: 2234\r\n   November 21, 1374";
             // 
-            // OrderPrint
+            // orderPrint
             // 
-            this.OrderPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.OrderPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderPrint.Location = new System.Drawing.Point(410, 187);
-            this.OrderPrint.Name = "OrderPrint";
-            this.OrderPrint.Size = new System.Drawing.Size(223, 118);
-            this.OrderPrint.TabIndex = 21;
-            this.OrderPrint.Text = "\r\n   .\r\n   .\r\n   .\r\n";
-            this.OrderPrint.Click += new System.EventHandler(this.OrderPrint_Click);
+            this.orderPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.orderPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderPrint.Location = new System.Drawing.Point(410, 187);
+            this.orderPrint.Name = "orderPrint";
+            this.orderPrint.Size = new System.Drawing.Size(223, 118);
+            this.orderPrint.TabIndex = 21;
+            this.orderPrint.Text = "\r\n   .\r\n   .\r\n   .\r\n";
+            this.orderPrint.Click += new System.EventHandler(this.OrderPrint_Click);
             // 
-            // PricePrint
+            // pricePrint
             // 
-            this.PricePrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PricePrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PricePrint.Location = new System.Drawing.Point(607, 189);
-            this.PricePrint.Name = "PricePrint";
-            this.PricePrint.Size = new System.Drawing.Size(113, 116);
-            this.PricePrint.TabIndex = 22;
-            this.PricePrint.Text = "\r\n.  ";
-            this.PricePrint.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.pricePrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pricePrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricePrint.Location = new System.Drawing.Point(607, 189);
+            this.pricePrint.Name = "pricePrint";
+            this.pricePrint.Size = new System.Drawing.Size(113, 116);
+            this.pricePrint.TabIndex = 22;
+            this.pricePrint.Text = "\r\n.  ";
+            this.pricePrint.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // TotalPrint
+            // totalPrint
             // 
-            this.TotalPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TotalPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPrint.Location = new System.Drawing.Point(410, 305);
-            this.TotalPrint.Name = "TotalPrint";
-            this.TotalPrint.Size = new System.Drawing.Size(176, 141);
-            this.TotalPrint.TabIndex = 23;
-            this.TotalPrint.Text = "   Sub Total\r\n   Tax\r\n   Total\r\n\r\n   Tendered\r\n   Change";
+            this.totalPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totalPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalPrint.Location = new System.Drawing.Point(410, 305);
+            this.totalPrint.Name = "totalPrint";
+            this.totalPrint.Size = new System.Drawing.Size(176, 141);
+            this.totalPrint.TabIndex = 23;
+            this.totalPrint.Text = "   Sub Total\r\n   Tax\r\n   Total\r\n\r\n   Tendered\r\n   Change";
             // 
-            // TotalsOutputPrint
+            // totalsOutputPrint
             // 
-            this.TotalsOutputPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TotalsOutputPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalsOutputPrint.Location = new System.Drawing.Point(581, 305);
-            this.TotalsOutputPrint.Name = "TotalsOutputPrint";
-            this.TotalsOutputPrint.Size = new System.Drawing.Size(139, 141);
-            this.TotalsOutputPrint.TabIndex = 24;
-            this.TotalsOutputPrint.Text = ".   ";
-            this.TotalsOutputPrint.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.totalsOutputPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totalsOutputPrint.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalsOutputPrint.Location = new System.Drawing.Point(581, 305);
+            this.totalsOutputPrint.Name = "totalsOutputPrint";
+            this.totalsOutputPrint.Size = new System.Drawing.Size(139, 141);
+            this.totalsOutputPrint.TabIndex = 24;
+            this.totalsOutputPrint.Text = ".   ";
+            this.totalsOutputPrint.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label1
+            // receiptFooter
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(410, 446);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 56);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Drink responsibly, and have a nice day\r\nSponsored by Ye Olde Blacksmith Shoppe";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.receiptFooter.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.receiptFooter.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptFooter.Location = new System.Drawing.Point(410, 446);
+            this.receiptFooter.Name = "receiptFooter";
+            this.receiptFooter.Size = new System.Drawing.Size(310, 56);
+            this.receiptFooter.TabIndex = 25;
+            this.receiptFooter.Text = "Drink responsibly, and have a nice day\r\nSponsored by Ye Olde Blacksmith Shoppe";
+            this.receiptFooter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ChangeOutput
+            // changeOutput
             // 
-            this.ChangeOutput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChangeOutput.Location = new System.Drawing.Point(174, 430);
-            this.ChangeOutput.Name = "ChangeOutput";
-            this.ChangeOutput.Size = new System.Drawing.Size(96, 23);
-            this.ChangeOutput.TabIndex = 17;
-            this.ChangeOutput.Text = ".";
-            this.ChangeOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.changeOutput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeOutput.Location = new System.Drawing.Point(174, 430);
+            this.changeOutput.Name = "changeOutput";
+            this.changeOutput.Size = new System.Drawing.Size(96, 23);
+            this.changeOutput.TabIndex = 17;
+            this.changeOutput.Text = ".";
+            this.changeOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // PrintButton
+            // printButton
             // 
-            this.PrintButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintButton.Location = new System.Drawing.Point(20, 460);
-            this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(288, 36);
-            this.PrintButton.TabIndex = 7;
-            this.PrintButton.Text = "Scribe Receipt";
-            this.PrintButton.UseVisualStyleBackColor = true;
-            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
+            this.printButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printButton.Location = new System.Drawing.Point(20, 460);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(288, 36);
+            this.printButton.TabIndex = 7;
+            this.printButton.Text = "Scribe Receipt";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // Error
             // 
@@ -332,16 +332,16 @@
             this.ReceiptCover.Text = ".";
             this.ReceiptCover.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // ResetButton
+            // resetButton
             // 
-            this.ResetButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetButton.Location = new System.Drawing.Point(20, 503);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(288, 38);
-            this.ResetButton.TabIndex = 28;
-            this.ResetButton.Text = "New Order";
-            this.ResetButton.UseVisualStyleBackColor = true;
-            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            this.resetButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(20, 503);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(288, 38);
+            this.resetButton.TabIndex = 28;
+            this.resetButton.Text = "New Order";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // Form1
             // 
@@ -349,34 +349,34 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(732, 553);
-            this.Controls.Add(this.ResetButton);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.ReceiptCover);
             this.Controls.Add(this.Error);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TotalsOutputPrint);
-            this.Controls.Add(this.TotalPrint);
-            this.Controls.Add(this.PricePrint);
-            this.Controls.Add(this.OrderPrint);
-            this.Controls.Add(this.OrderAndDate);
-            this.Controls.Add(this.ReceiptHeader);
-            this.Controls.Add(this.PrintButton);
-            this.Controls.Add(this.ChangeOutput);
-            this.Controls.Add(this.ChangeLabel);
-            this.Controls.Add(this.CalcChangeButton);
-            this.Controls.Add(this.TendInput);
-            this.Controls.Add(this.TendLabel);
+            this.Controls.Add(this.receiptFooter);
+            this.Controls.Add(this.totalsOutputPrint);
+            this.Controls.Add(this.totalPrint);
+            this.Controls.Add(this.pricePrint);
+            this.Controls.Add(this.orderPrint);
+            this.Controls.Add(this.orderDate);
+            this.Controls.Add(this.receiptHeader);
+            this.Controls.Add(this.printButton);
+            this.Controls.Add(this.changeOutput);
+            this.Controls.Add(this.changeLabel);
+            this.Controls.Add(this.calcChangeButton);
+            this.Controls.Add(this.tendInput);
+            this.Controls.Add(this.tendLabel);
             this.Controls.Add(this.blackBarLabel);
-            this.Controls.Add(this.CalcNum);
+            this.Controls.Add(this.calcNum);
             this.Controls.Add(this.CalcNumber);
-            this.Controls.Add(this.CalcLabel);
+            this.Controls.Add(this.calcLabel);
             this.Controls.Add(this.RPInput);
             this.Controls.Add(this.BPInput);
             this.Controls.Add(this.GPInput);
-            this.Controls.Add(this.CalcTotalButton);
+            this.Controls.Add(this.calcTotalButton);
             this.Controls.Add(this.GPLabel);
             this.Controls.Add(this.BPLabel);
             this.Controls.Add(this.RPLabel);
-            this.Controls.Add(this.PSTitle);
+            this.Controls.Add(this.title);
             this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -389,34 +389,34 @@
 
         #endregion
 
-        private System.Windows.Forms.Label PSTitle;
+        private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label RPLabel;
         private System.Windows.Forms.Label BPLabel;
         private System.Windows.Forms.Label GPLabel;
-        private System.Windows.Forms.Button CalcTotalButton;
+        private System.Windows.Forms.Button calcTotalButton;
         private System.Windows.Forms.TextBox GPInput;
         private System.Windows.Forms.TextBox BPInput;
         private System.Windows.Forms.TextBox RPInput;
-        private System.Windows.Forms.Label CalcLabel;
+        private System.Windows.Forms.Label calcLabel;
         private System.Windows.Forms.Label CalcNumber;
-        private System.Windows.Forms.Label CalcNum;
+        private System.Windows.Forms.Label calcNum;
         private System.Windows.Forms.Label blackBarLabel;
-        private System.Windows.Forms.Label TendLabel;
-        private System.Windows.Forms.TextBox TendInput;
-        private System.Windows.Forms.Button CalcChangeButton;
-        private System.Windows.Forms.Label ChangeLabel;
-        private System.Windows.Forms.Label ReceiptHeader;
-        private System.Windows.Forms.Label OrderAndDate;
-        private System.Windows.Forms.Label OrderPrint;
-        private System.Windows.Forms.Label PricePrint;
-        private System.Windows.Forms.Label TotalPrint;
-        private System.Windows.Forms.Label TotalsOutputPrint;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label ChangeOutput;
-        private System.Windows.Forms.Button PrintButton;
+        private System.Windows.Forms.Label tendLabel;
+        private System.Windows.Forms.TextBox tendInput;
+        private System.Windows.Forms.Button calcChangeButton;
+        private System.Windows.Forms.Label changeLabel;
+        private System.Windows.Forms.Label receiptHeader;
+        private System.Windows.Forms.Label orderDate;
+        private System.Windows.Forms.Label orderPrint;
+        private System.Windows.Forms.Label pricePrint;
+        private System.Windows.Forms.Label totalPrint;
+        private System.Windows.Forms.Label totalsOutputPrint;
+        private System.Windows.Forms.Label receiptFooter;
+        private System.Windows.Forms.Label changeOutput;
+        private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Label Error;
         private System.Windows.Forms.Label ReceiptCover;
-        private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
