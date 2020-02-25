@@ -325,9 +325,9 @@
             // ReceiptCover
             // 
             this.ReceiptCover.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiptCover.Location = new System.Drawing.Point(399, 495);
+            this.ReceiptCover.Location = new System.Drawing.Point(387, 27);
             this.ReceiptCover.Name = "ReceiptCover";
-            this.ReceiptCover.Size = new System.Drawing.Size(333, 462);
+            this.ReceiptCover.Size = new System.Drawing.Size(333, 453);
             this.ReceiptCover.TabIndex = 27;
             this.ReceiptCover.Text = ".";
             this.ReceiptCover.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
