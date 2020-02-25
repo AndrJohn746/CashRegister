@@ -50,7 +50,7 @@ namespace CashRegister
             ReceiptCover.Text = "";
             ReceiptCover.Location = new Point(300, 35);
             ambience.PlayLooping();
-            
+
         }
 
         private void OrderPrint_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace CashRegister
                 redPotions = Convert.ToInt16(RPInput.Text);
                 bluePotions = Convert.ToInt16(BPInput.Text);
                 greenPotions = Convert.ToInt16(GPInput.Text);
-                
+
                 //calculates prices per different items
                 redPrice = redPotions * defaultRedPrice;
                 bluePrice = bluePotions * defaultBluePrice;
@@ -112,7 +112,7 @@ namespace CashRegister
                 //gathers the number input for money tendered and change
                 tendered = Convert.ToInt16(tendInput.Text);
                 change = tendered - total;
-                
+
                 //displays calculations
                 changeOutput.Text = "" + change.ToString("0.00");
                 Error.Text = "";
@@ -146,11 +146,13 @@ namespace CashRegister
             else if (total < 1)
             {
                 Error.Text = "Error; please input an order";
-            }else{
+            }
+            else
+            {
 
-            //just formatting stuff :)    
-            orderPrint.Text = "\n";
-            pricePrint.Text = "\n";
+                //just formatting stuff :)    
+                orderPrint.Text = "\n";
+                pricePrint.Text = "\n";
 
                 if (redPotions > 0) //if any red potions ordered, display number ordered and price
                 {
@@ -172,8 +174,8 @@ namespace CashRegister
                 totalsOutputPrint.Text = "" + subTotal.ToString("0.00") + "   \n" + taxCalc.ToString("0.00") + "   \n" + total.ToString("0.00");
                 totalsOutputPrint.Text += "   \n\n" + tendered.ToString("0.00") + "   \n" + change.ToString("0.00") + "   ";
 
-            //clears the error box if there are any errors
-            Error.Text = "";
+                //clears the error box if there are any errors
+                Error.Text = "";
 
                 writing.Play();
 
