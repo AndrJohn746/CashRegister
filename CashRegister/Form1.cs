@@ -18,19 +18,19 @@ namespace CashRegister
     public partial class Form1 : Form
     {
         //some global variables
-        long RedPotions = 0;
-        double RedPrice = 0;
-        long BluePotions = 0;
-        double BluePrice = 0;
-        long GreenPotions = 0;
-        double GreenPrice = 0;
+        long redPotions = 0;
+        double redPrice = 0;
+        long bluePotions = 0;
+        double bluePrice = 0;
+        long greenPotions = 0;
+        double greenPrice = 0;
 
         //some more global variables
-        double SubTotal;
-        double TaxCalc;
-        double Total;
-        double Tendered;
-        double Change;
+        double subTotal;
+        double taxCalc;
+        double total;
+        double tendered;
+        double change;
 
         //SOUND DECLARATION
         readonly SoundPlayer ambience = new SoundPlayer(Properties.Resources.Busy_Medival);
@@ -61,10 +61,10 @@ namespace CashRegister
         private void CalcTotalButton_Click(object sender, EventArgs e)
         {
             //some local variable only used for this section
-            int DefaultRedPrice = 3;
-            int DefaultBluePrice = 5;
-            int DefaultGreenPrice = 10;
-            double TaxDefault = 0.13;
+            int defaultRedPrice = 3;
+            int defaultBluePrice = 5;
+            int defaultGreenPrice = 10;
+            double taxDefault = 0.13;
 
             try
             {
@@ -81,22 +81,22 @@ namespace CashRegister
                 {
                     RPInput.Text = "0";
                 }
-                RedPotions = Convert.ToInt16(RPInput.Text);
-                BluePotions = Convert.ToInt16(BPInput.Text);
-                GreenPotions = Convert.ToInt16(GPInput.Text);
+                redPotions = Convert.ToInt16(RPInput.Text);
+                bluePotions = Convert.ToInt16(BPInput.Text);
+                greenPotions = Convert.ToInt16(GPInput.Text);
                 
                 //calculates prices per different items
-                RedPrice = RedPotions * DefaultRedPrice;
-                BluePrice = BluePotions * DefaultBluePrice;
-                GreenPrice = GreenPotions * DefaultGreenPrice;
-                SubTotal = RedPrice + BluePrice + GreenPrice;
-                TaxCalc = TaxDefault * SubTotal;
-                Total = TaxCalc + SubTotal;
+                redPrice = redPotions * defaultRedPrice;
+                bluePrice = bluePotions * defaultBluePrice;
+                greenPrice = greenPotions * defaultGreenPrice;
+                subTotal = redPrice + bluePrice + greenPrice;
+                taxCalc = taxDefault * subTotal;
+                total = taxCalc + subTotal;
 
                 //displays calculations
-                calcNum.Text = "" + SubTotal.ToString("0.00");
-                calcNum.Text += "\n\n " + TaxCalc.ToString("0.00");
-                calcNum.Text += "\n\n " + Total.ToString("0.00");
+                calcNum.Text = "" + subTotal.ToString("0.00");
+                calcNum.Text += "\n\n " + taxCalc.ToString("0.00");
+                calcNum.Text += "\n\n " + total.ToString("0.00");
                 Error.Text = "";
             }
             catch //if tried and failed, display error message
@@ -110,15 +110,15 @@ namespace CashRegister
             try //try to gather if tendered number is enough
             {
                 //gathers the number input for money tendered and change
-                Tendered = Convert.ToInt16(tendInput.Text);
-                Change = Tendered - Total;
+                tendered = Convert.ToInt16(tendInput.Text);
+                change = tendered - total;
                 
                 //displays calculations
-                changeOutput.Text = "" + Change.ToString("0.00");
+                changeOutput.Text = "" + change.ToString("0.00");
                 Error.Text = "";
 
                 //error message if tendered amount isn't enough
-                if (Change < 0)
+                if (change < 0)
                 {
                     Error.Text = "Error; change is negative, need more change";
                 }
@@ -139,11 +139,11 @@ namespace CashRegister
         {
 
             //some cool error messages and stuff
-            if (Change < 0)
+            if (change < 0)
             {
                 Error.Text = "Error; change is negative, need more change";
             }
-            else if (Total < 1)
+            else if (total < 1)
             {
                 Error.Text = "Error; please input an order";
             }else{
@@ -152,25 +152,25 @@ namespace CashRegister
             orderPrint.Text = "\n";
             pricePrint.Text = "\n";
 
-                if (RedPotions > 0) //if any red potions ordered, display number ordered and price
+                if (redPotions > 0) //if any red potions ordered, display number ordered and price
                 {
-                    orderPrint.Text += "   R. Potions x" + RedPotions.ToString() + "\n";
-                    pricePrint.Text += "" + RedPrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   R. Potions x" + redPotions.ToString() + "\n";
+                    pricePrint.Text += "" + redPrice.ToString("0.00") + "   \n";
                 }
-                if (BluePotions > 0) //if any blue potions ordered, display number and price
+                if (bluePotions > 0) //if any blue potions ordered, display number and price
                 {
-                    orderPrint.Text += "   B. Potions x" + BluePotions.ToString() + "\n";
-                    pricePrint.Text += "" + BluePrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   B. Potions x" + bluePotions.ToString() + "\n";
+                    pricePrint.Text += "" + bluePrice.ToString("0.00") + "   \n";
                 }
-                if (GreenPotions > 0) //if any green potions ordered, display number and price
+                if (greenPotions > 0) //if any green potions ordered, display number and price
                 {
-                    orderPrint.Text += "   G. Potions x" + GreenPotions.ToString() + "\n";
-                    pricePrint.Text += "" + GreenPrice.ToString("0.00") + "   \n";
+                    orderPrint.Text += "   G. Potions x" + greenPotions.ToString() + "\n";
+                    pricePrint.Text += "" + greenPrice.ToString("0.00") + "   \n";
                 }
 
                 //displays total and change and stuff
-                totalsOutputPrint.Text = "" + SubTotal.ToString("0.00") + "   \n" + TaxCalc.ToString("0.00") + "   \n" + Total.ToString("0.00");
-                totalsOutputPrint.Text += "   \n\n" + Tendered.ToString("0.00") + "   \n" + Change.ToString("0.00") + "   ";
+                totalsOutputPrint.Text = "" + subTotal.ToString("0.00") + "   \n" + taxCalc.ToString("0.00") + "   \n" + total.ToString("0.00");
+                totalsOutputPrint.Text += "   \n\n" + tendered.ToString("0.00") + "   \n" + change.ToString("0.00") + "   ";
 
             //clears the error box if there are any errors
             Error.Text = "";
@@ -192,12 +192,12 @@ namespace CashRegister
         private void ResetButton_Click(object sender, EventArgs e)
         {
             ReceiptCover.Location = new Point(300, 35);
-            RedPotions = 0;
-            BluePotions = 0;
-            GreenPotions = 0;
-            Change = 0;
-            Tendered = 0;
-            TaxCalc = 0;
+            redPotions = 0;
+            bluePotions = 0;
+            greenPotions = 0;
+            change = 0;
+            tendered = 0;
+            taxCalc = 0;
 
             RPInput.Text = "0";
             BPInput.Text = "0";
