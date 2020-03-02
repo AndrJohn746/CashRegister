@@ -61,29 +61,29 @@ namespace CashRegister
         private void CalcTotalButton_Click(object sender, EventArgs e)
         {
             //some local variable only used for this section
-            int defaultRedPrice = 3;
-            int defaultBluePrice = 5;
-            int defaultGreenPrice = 10;
-            double taxDefault = 0.13;
+            const int defaultRedPrice = 3;
+            const int defaultBluePrice = 5;
+            const int defaultGreenPrice = 10;
+            const double taxDefault = 0.13;
 
             try
             {
                 //grabs the numbers of potions ordered
-                if (GPInput.Text == null || GPInput.Text == "")
+                if (gPInput.Text == null || gPInput.Text == "")
                 {
-                    GPInput.Text = "0";
+                    gPInput.Text = "0";
                 }
-                if (BPInput.Text == null || BPInput.Text == "")
+                if (bPInput.Text == null || bPInput.Text == "")
                 {
-                    BPInput.Text = "0";
+                    bPInput.Text = "0";
                 }
-                if (RPInput.Text == null || RPInput.Text == "")
+                if (rPInput.Text == null || rPInput.Text == "")
                 {
-                    RPInput.Text = "0";
+                    rPInput.Text = "0";
                 }
-                redPotions = Convert.ToInt16(RPInput.Text);
-                bluePotions = Convert.ToInt16(BPInput.Text);
-                greenPotions = Convert.ToInt16(GPInput.Text);
+                redPotions = Convert.ToInt16(rPInput.Text);
+                bluePotions = Convert.ToInt16(bPInput.Text);
+                greenPotions = Convert.ToInt16(gPInput.Text);
 
                 //calculates prices per different items
                 redPrice = redPotions * defaultRedPrice;
@@ -197,13 +197,19 @@ namespace CashRegister
             redPotions = 0;
             bluePotions = 0;
             greenPotions = 0;
+            redPrice = 0;
+            bluePrice = 0;
+            greenPrice = 0;
             change = 0;
             tendered = 0;
             taxCalc = 0;
+            total = 0;
+            subTotal = 0;
 
-            RPInput.Text = "0";
-            BPInput.Text = "0";
-            GPInput.Text = "0";
+
+            rPInput.Text = "0";
+            bPInput.Text = "0";
+            gPInput.Text = "0";
             tendInput.Text = "0";
             calcNum.Text = "";
             changeOutput.Text = "";

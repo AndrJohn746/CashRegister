@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.title = new System.Windows.Forms.Label();
-            this.RPLabel = new System.Windows.Forms.Label();
-            this.BPLabel = new System.Windows.Forms.Label();
-            this.GPLabel = new System.Windows.Forms.Label();
+            this.rPLabel = new System.Windows.Forms.Label();
+            this.bPLabel = new System.Windows.Forms.Label();
+            this.gPLabel = new System.Windows.Forms.Label();
             this.calcTotalButton = new System.Windows.Forms.Button();
-            this.GPInput = new System.Windows.Forms.TextBox();
-            this.BPInput = new System.Windows.Forms.TextBox();
-            this.RPInput = new System.Windows.Forms.TextBox();
+            this.gPInput = new System.Windows.Forms.TextBox();
+            this.bPInput = new System.Windows.Forms.TextBox();
+            this.rPInput = new System.Windows.Forms.TextBox();
             this.calcLabel = new System.Windows.Forms.Label();
             this.CalcNumber = new System.Windows.Forms.Label();
             this.calcNum = new System.Windows.Forms.Label();
@@ -70,35 +70,35 @@
             this.title.TabIndex = 0;
             this.title.Text = "Potion Seller\'s Potions";
             // 
-            // RPLabel
+            // rPLabel
             // 
-            this.RPLabel.BackColor = System.Drawing.Color.LightCoral;
-            this.RPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RPLabel.Location = new System.Drawing.Point(13, 57);
-            this.RPLabel.Name = "RPLabel";
-            this.RPLabel.Size = new System.Drawing.Size(312, 40);
-            this.RPLabel.TabIndex = 1;
-            this.RPLabel.Text = "Number of Red Potions (3 Shillings each)";
+            this.rPLabel.BackColor = System.Drawing.Color.LightCoral;
+            this.rPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rPLabel.Location = new System.Drawing.Point(13, 57);
+            this.rPLabel.Name = "rPLabel";
+            this.rPLabel.Size = new System.Drawing.Size(312, 40);
+            this.rPLabel.TabIndex = 1;
+            this.rPLabel.Text = "Number of Red Potions (3 Shillings each)";
             // 
-            // BPLabel
+            // bPLabel
             // 
-            this.BPLabel.BackColor = System.Drawing.Color.LightCoral;
-            this.BPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BPLabel.Location = new System.Drawing.Point(13, 97);
-            this.BPLabel.Name = "BPLabel";
-            this.BPLabel.Size = new System.Drawing.Size(312, 40);
-            this.BPLabel.TabIndex = 2;
-            this.BPLabel.Text = "Number of Blue Potions (5 Shillings each)";
+            this.bPLabel.BackColor = System.Drawing.Color.LightCoral;
+            this.bPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bPLabel.Location = new System.Drawing.Point(13, 97);
+            this.bPLabel.Name = "bPLabel";
+            this.bPLabel.Size = new System.Drawing.Size(312, 40);
+            this.bPLabel.TabIndex = 2;
+            this.bPLabel.Text = "Number of Blue Potions (5 Shillings each)";
             // 
-            // GPLabel
+            // gPLabel
             // 
-            this.GPLabel.BackColor = System.Drawing.Color.LightCoral;
-            this.GPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GPLabel.Location = new System.Drawing.Point(13, 137);
-            this.GPLabel.Name = "GPLabel";
-            this.GPLabel.Size = new System.Drawing.Size(312, 40);
-            this.GPLabel.TabIndex = 3;
-            this.GPLabel.Text = "Number of Green Potions (10 Shillings each)";
+            this.gPLabel.BackColor = System.Drawing.Color.LightCoral;
+            this.gPLabel.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gPLabel.Location = new System.Drawing.Point(13, 137);
+            this.gPLabel.Name = "gPLabel";
+            this.gPLabel.Size = new System.Drawing.Size(312, 40);
+            this.gPLabel.TabIndex = 3;
+            this.gPLabel.Text = "Number of Green Potions (10 Shillings each)";
             // 
             // calcTotalButton
             // 
@@ -111,32 +111,32 @@
             this.calcTotalButton.UseVisualStyleBackColor = true;
             this.calcTotalButton.Click += new System.EventHandler(this.CalcTotalButton_Click);
             // 
-            // GPInput
+            // gPInput
             // 
-            this.GPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GPInput.Location = new System.Drawing.Point(331, 135);
-            this.GPInput.Name = "GPInput";
-            this.GPInput.Size = new System.Drawing.Size(34, 28);
-            this.GPInput.TabIndex = 3;
-            this.GPInput.Text = "0";
+            this.gPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gPInput.Location = new System.Drawing.Point(331, 135);
+            this.gPInput.Name = "gPInput";
+            this.gPInput.Size = new System.Drawing.Size(34, 28);
+            this.gPInput.TabIndex = 3;
+            this.gPInput.Text = "0";
             // 
-            // BPInput
+            // bPInput
             // 
-            this.BPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BPInput.Location = new System.Drawing.Point(331, 95);
-            this.BPInput.Name = "BPInput";
-            this.BPInput.Size = new System.Drawing.Size(34, 28);
-            this.BPInput.TabIndex = 2;
-            this.BPInput.Text = "0";
+            this.bPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bPInput.Location = new System.Drawing.Point(331, 95);
+            this.bPInput.Name = "bPInput";
+            this.bPInput.Size = new System.Drawing.Size(34, 28);
+            this.bPInput.TabIndex = 2;
+            this.bPInput.Text = "0";
             // 
-            // RPInput
+            // rPInput
             // 
-            this.RPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RPInput.Location = new System.Drawing.Point(331, 55);
-            this.RPInput.Name = "RPInput";
-            this.RPInput.Size = new System.Drawing.Size(34, 28);
-            this.RPInput.TabIndex = 1;
-            this.RPInput.Text = "0";
+            this.rPInput.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rPInput.Location = new System.Drawing.Point(331, 55);
+            this.rPInput.Name = "rPInput";
+            this.rPInput.Size = new System.Drawing.Size(34, 28);
+            this.rPInput.TabIndex = 1;
+            this.rPInput.Text = "0";
             // 
             // calcLabel
             // 
@@ -325,7 +325,7 @@
             // ReceiptCover
             // 
             this.ReceiptCover.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiptCover.Location = new System.Drawing.Point(387, 27);
+            this.ReceiptCover.Location = new System.Drawing.Point(387, 55);
             this.ReceiptCover.Name = "ReceiptCover";
             this.ReceiptCover.Size = new System.Drawing.Size(333, 453);
             this.ReceiptCover.TabIndex = 27;
@@ -369,13 +369,13 @@
             this.Controls.Add(this.calcNum);
             this.Controls.Add(this.CalcNumber);
             this.Controls.Add(this.calcLabel);
-            this.Controls.Add(this.RPInput);
-            this.Controls.Add(this.BPInput);
-            this.Controls.Add(this.GPInput);
+            this.Controls.Add(this.rPInput);
+            this.Controls.Add(this.bPInput);
+            this.Controls.Add(this.gPInput);
             this.Controls.Add(this.calcTotalButton);
-            this.Controls.Add(this.GPLabel);
-            this.Controls.Add(this.BPLabel);
-            this.Controls.Add(this.RPLabel);
+            this.Controls.Add(this.gPLabel);
+            this.Controls.Add(this.bPLabel);
+            this.Controls.Add(this.rPLabel);
             this.Controls.Add(this.title);
             this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -390,13 +390,13 @@
         #endregion
 
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Label RPLabel;
-        private System.Windows.Forms.Label BPLabel;
-        private System.Windows.Forms.Label GPLabel;
+        private System.Windows.Forms.Label rPLabel;
+        private System.Windows.Forms.Label bPLabel;
+        private System.Windows.Forms.Label gPLabel;
         private System.Windows.Forms.Button calcTotalButton;
-        private System.Windows.Forms.TextBox GPInput;
-        private System.Windows.Forms.TextBox BPInput;
-        private System.Windows.Forms.TextBox RPInput;
+        private System.Windows.Forms.TextBox gPInput;
+        private System.Windows.Forms.TextBox bPInput;
+        private System.Windows.Forms.TextBox rPInput;
         private System.Windows.Forms.Label calcLabel;
         private System.Windows.Forms.Label CalcNumber;
         private System.Windows.Forms.Label calcNum;
